@@ -65,3 +65,5 @@ and a "Radar 101" page explaining how L-band radar sees ice, snow, soil, and for
 ## Team
 
 Utkarsh Kumar, PhD candidate in Electrical and Computer Engineering (RF/analog IC design), Northeastern University.
+## Use of AI
+Code (sar_process.py, app.py), README text, and demo video editing were developed with assistance from Claude (Anthropic), an AI assistant. All results come from real NISAR data processed by this code; no images are AI-generated.
