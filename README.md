@@ -1,6 +1,6 @@
 # SAR-Watch: Mount Rainier through the clouds
 
-**NASA Space Apps Challenge 2026 · Challenge: Dancing with the SARs · Boston, MA**
+**NASA Space Apps Challenge 2026 · Challenge: Dancing with the SARs · Cambridge, MA**
 
 SAR-Watch uses L-band radar data from the NASA-ISRO **NISAR** mission to detect and map
 surface change on Mount Rainier, Washington, between summer and late autumn 2026.
@@ -8,6 +8,11 @@ Radar sees through clouds and works at night, so it can watch mountains that opt
 satellites often miss.
 
 ![Change overview](change_overview.png)
+
+## Demo and presentation
+
+- **30-second narrated demo:** [sar_watch_demo_voice.mp4](https://github.com/Ut1991/SAR-Watch/raw/main/sar_watch_demo_voice.mp4)
+- **Full presentation (12 slides, general audience):** [PDF](SAR-Watch_Final_Presentation.pdf) · [PowerPoint with embedded video](SAR-Watch_Final_Presentation.pptx)
 
 ## Key result
 
@@ -24,6 +29,12 @@ The radar is watching the mountain switch from summer melt to winter freeze.
 
 Stable features, such as a lake northwest of the summit, look the same on both dates,
 which supports the processing.
+
+## Why it matters
+
+- Nearly 2 billion people depend on water from mountain snow and glaciers.
+- Melting glaciers raise sea levels, and ice on volcanoes like Rainier affects mudflow (lahar) hazards.
+- The same free data and open code can watch the Himalayas, Andes, Alps, Alaska, and polar ice.
 
 ## Data
 
@@ -51,6 +62,12 @@ Both: Track 106, Frame 25, ascending, HH/HV polarizations, from the
   Interpretations should be confirmed with optical imagery, weather records, or field data.
 - Only two dates are compared. A full 12-day time series would separate seasonal cycles from trends.
 
+## Next steps
+
+- Use all 13 NISAR passes (July to October) to pinpoint the melt-to-freeze date.
+- Overlay official glacier outlines and mask steep-slope layover and shadow.
+- Validate with weather records and optical imagery.
+
 ## Run it
 
 ```
@@ -65,5 +82,9 @@ and a "Radar 101" page explaining how L-band radar sees ice, snow, soil, and for
 ## Team
 
 Utkarsh Kumar, PhD candidate in Electrical and Computer Engineering (RF/analog IC design), Northeastern University.
+
 ## Use of AI
-Code (sar_process.py, app.py), README text, and demo video editing were developed with assistance from Claude (Anthropic), an AI assistant. All results come from real NISAR data processed by this code; no images are AI-generated.
+
+- Code (`sar_process.py`, `app.py`), README text, presentation slides, and demo video editing were developed with assistance from Claude (Anthropic), an AI assistant.
+- The demo video narration is an **AI-generated voice** (Microsoft Clipchamp text-to-speech), labeled in the video.
+- All results come from real NISAR data processed by this code; no maps or result images are AI-generated.
